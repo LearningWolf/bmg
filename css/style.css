@@ -34,6 +34,7 @@
 /* commonly used style */
 body{
     font-family: inter !important;
+    overflow-x: hidden;
 }
 h1,h4{
     font-family: interMedium !important;
@@ -75,6 +76,9 @@ nav{
     background-color: #5A24C7 !important;
     border-radius: 8px !important;
 }
+.carousel{
+    width: 90% !important;
+}
 /* section01 */
 /* video{
     max-height: 100vh;
@@ -82,8 +86,12 @@ nav{
 } */
 .bannerImgMobile{
     border-radius: 50px;
-    /* width: 100%;
-    height: 70%; */
+    border-radius: 50px;
+    width: 80%;
+    position: relative;
+    top: -591px;
+    left: 38px;
+    height: 565px;
 }
 .banner{
     background-image: url(../assets/banner.png);
@@ -143,8 +151,8 @@ nav{
 
 /* bemygues60Sec */
 .bemyguest60Sec{
-    height: 670px;
-    padding: 100px 50px;
+    height: 600px;
+    padding: 100px 50px 50px 50px;
 }
 .guestTtl{
     /* margin-bottom: 112px; */
@@ -165,7 +173,14 @@ nav{
 .learnMore img{
     margin-left: 1rem;
 }
-
+iframe.bMyGuestIntroVideo html body video{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+    top: 100% !important;
+    left: 50% !important;
+    /* transform: translate(-50%, -50%); */
+}
 /* about */
 .aboutT{
     font-family: interBold !important;
@@ -214,7 +229,7 @@ nav{
     height: 220px;
     border-radius: 50%;
     border: 2px dashed #0E0066;
-    padding: 10px 0px !important;
+    padding: 8px 0px !important;
     display: flex;
     justify-content: center;
     position: relative;
