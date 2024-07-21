@@ -670,6 +670,16 @@ footer{
         position: absolute;
         left: 0px;
     }
+    /* section FAQ */
+    .accordion-header {
+        margin-bottom: 16px !important;
+    }
+    .faqAccordian .accordion-body {
+        color: #626263;
+        font-size: 12px;
+        padding: 0rem 1.25rem 0.5rem 1.25rem !important;
+    }
+    /* section FAQ */
     /* section contact */
     .contactForm h1 {
         font-size: 36px;
@@ -712,6 +722,33 @@ footer{
         padding-left: 20px;
     }
     /* section contact */
+}
 
-
+@media (max-width: 500px) {
+    .bannerContet {
+        padding-top: 6px;
+    }
+    .bannerTextMobile {
+        padding-top: 40px;
+    }
+    .footerCompany {
+        width: 33% !important;
+        padding-top: 20px;
+    }
+    .footerCompany ul{
+        font-size: 14px;
+        padding-left: 20px;
+    }
+    .footerCompany li {
+        font-size: 12px;
+        margin-bottom: 11px;
+    }
+    .footerLogo {
+        width: 100% !important;
+        justify-content: center;
+    }
+    .contactBtnFooterMobile{
+        display: flex;
+        justify-content: center;
+    }
 }
