@@ -3,15 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <meta name="viewport" content="width=1024"> -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
+    <div class="d-md-none">
+        <nav class="navbar">
+            <div class="container-fluid">
+                <button class="navbar-toggler btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="./assets/navHandBurger.svg" alt="">
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/BeMyGuestWhite.svg" alt="">
+                </a>
+                <button class="btn p-0">
+                    <img src="./assets/navSearch.svg" alt="">
+                </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-light">
+                  <li class="navigaMenu text-center"><a href="#about">About</a></li>
+                  <li class="navigaMenu text-center"><a href="#works">How  it works?</a></li>
+                  <li class="navigaMenu text-center"><a href="#mission">Our  Mission</a></li>
+                  <li class="navigaMenu text-center"><a href="#faq">FAQ's</a></li>
+                  <li class="navigaMenu text-center"><a href="#contact">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container d-none d-md-block">
         <nav class="row justify-content-between">
-            <div class="logo col-3 d-flex">
+            <div class="logo col-3 d-md-flex">
                 <div class="logoHouse">
                     <img src="./assets/Subtract.png" alt="">
                 </div>
@@ -19,7 +43,7 @@
                     <img src="./assets/BeMyGuest.png" alt="">
                 </div>
             </div>
-            <ul class="d-flex flex-wrap justify-content-between list-unstyled col-6 ps-5 navBar">
+            <ul class="d-md-flex flex-wrap justify-content-between list-unstyled col-lg-6 col-8 ps-5 navBar">
                 <li class="navigaMenu"><a href="#about">About</a></li>
                 <li class="navigaMenu"><a href="#works">How  it works?</a></li>
                 <li class="navigaMenu"><a href="#mission">Our  Mission</a></li>
@@ -29,16 +53,16 @@
         </nav>
     </div>
 
-    <section class="banner">
+    <div class="banner">
         <div class="container px-5">
             <div class="row px-2 justify-content-between">
-                <div class="col-7 bannerContet">
+                <div class="col-md-7 col-12 bannerContet">
                     <h1>Only app that saves your money without spending it.</h1>
-                    <p class="mt-3">BeMyGuest – your app for sharing, renting, and offering services among family and friends worldwide. Experience 
+                    <p class="mt-3 d-none d-md-block">BeMyGuest – your app for sharing, renting, and offering services among family and friends worldwide. Experience 
                         the joy of genuine connections, endless possibilities, and meaningful savings.</p>
-                    <button class="contactBtn btn text-light mt-3">Contact Us <img src="./assets/arrowWhite.png" alt=""></button>
+                    <button class="contactBtn btn text-light mt-3 d-none d-md-block">Contact Us <img src="./assets/arrowWhite.png" alt=""></button>
                 </div>
-                <div class="col-4 pt-5 d-flex justify-content-end">
+                <div class="col-md-4 col-12 pt-5 d-flex justify-content-end">
                     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
@@ -61,19 +85,39 @@
         </div>
         <div class="socialIcon">
             <div class="socialIcaonBox">
-                <a href="#">
+                <a href="#" class="d-none d-md-block">
                     <img src="./assets/facebook.png" class="img-fluid" alt="facebook">
                 </a>
-                <a href="#">
+                <a href="#" class="d-none d-md-block">
                     <img src="./assets/instagram.png" class="img-fluid" alt="facebook">
                 </a>
-                <a href="#">
+                <a href="#" class="d-none d-md-block">
                     <img src="./assets/youtube.png" class="img-fluid" alt="facebook">
+                </a>
+                <a href="#" class="d-md-none d-block">
+                    <img src="./assets/facebookWhite.svg" class="w-75 ms-1" alt="facebook">
+                </a>
+                <a href="#" class="d-md-none d-block">
+                    <img src="./assets/instagramWhite.svg" class="w-75 ms-1" alt="facebook">
+                </a>
+                <a href="#" class="d-md-none d-block">
+                    <img src="./assets/youtubeWhite.svg" class="w-75 ms-1" alt="facebook">
                 </a>
             </div>
         </div>
+    </div>
+    <section class="container-fluid d-block d-md-none my-4 bannerTextMobile">
+        <div class="row">
+            <div class="col-12 px-4">
+                <p class="mt-3 text-center">BeMyGuest – your app for sharing, renting, and offering services among family and friends worldwide. Experience 
+                    the joy of genuine connections, endless possibilities, and meaningful savings.</p>
+                    <div class="w-100 d-flex justify-content-center">
+                        <button class="contactBtn btn text-light my-0 mx-auto">Contact Us <img src="./assets/arrowWhite.png" alt=""></button>
+                    </div>
+                </div>
+        </div>
     </section>
-    <section class="bannerBottom w-100 d-flex justify-content-center">
+    <section class="bannerBottom d-flex justify-content-center">
         <button class="btn border-0 border-none googlePlay">
             <img src="./assets/googlePlay.png" class="img-fluid" alt="">
         </button>
@@ -83,9 +127,10 @@
     </section>
     <section class="container-fluid">
         <div class="container">
+            <h1 class="guestTtl text-center d-lg-none mt-5">BeMyGuest in <span class="themeColor">60</span> seconds</h1>
             <div class="row bemyguest60Sec justify-content-between"> 
-                <h1 class="guestTtl text-center">BeMyGuest in <span class="themeColor">60</span> seconds</h1>
-                <div class="col-6">
+                <h1 class="guestTtl text-center  d-lg-block d-none">BeMyGuest in <span class="themeColor">60</span> seconds</h1>
+                <div class="col-12 col-lg-6">
                     <p class="guestCntnt my-4">
                         BeMyGuest – your app for sharing, renting, and offering services among family and friends worldwide. 
                         Experience the joy of genuine connections, endless possibilities, and meaningful savings.
@@ -95,8 +140,8 @@
                         <img src="./assets/arrowColored.png" alt="">
                     </button> -->
                 </div>
-                <div class="col-6">
-                    <video src="./assets/BMG_video.mp4" class="img-fluid" controls loop autoplay></video>
+                <div class="col-12 col-lg-6">
+                    <video src="./assets/BMG_video.mp4" class="img-fluid" controls loop></video>
                     <!-- <iframe src="./assets/BMG_video.mp4" class="w-100 h-100 bMyGuestIntroVideo" frameborder="0"></iframe> -->
                 </div>
             </div>
@@ -151,7 +196,7 @@
                 </div>
             </div>
         </div>
-        <div class="workBox">
+        <!-- <div class="workBox d-none d-xl-block">
             <div class="d-flex flex-wrap w-100 justify-content-around">
                 <div class="col-2">
                     <div class="workCardBoder">
@@ -222,18 +267,28 @@
                     </div>
                 </div>
             </div>
+        </div> -->
+        <div class="w-100 d-none d-md-block ps-lg-3 ps-xl-5">
+            <img src="./assets/howItWorks.svg" class="img-fluid" alt="">
         </div>
-
+        <div class="w-100 d-md-none">
+            <img src="./assets/howItWorksMobile.svg" class="img-fluid" alt="">
+        </div>
     </section>
-    <secntion id="mission" class="container-fluid missionBox pt-5 my-5">
+    <section id="mission" class="container-fluid missionBox pt-md-5 my-md-5 px-0">
         <div class="container">
-            <div class="row py-5">
+            <div class="row py-md-5">
                 <h1 class="guestTtl text-center">Our Mission</h1>
                 <p class="aboutTtl text-center mt-3 px-5 w-100">Our mission is to connect people worldwide through the joy of home sharing, renting items, and offering services within your trusted community of family and friends globally. Create memorable experiences, make meaningful connections, and accessible travel.</p>
                 <p class="aboutTtl text-center mt-2 px-5 w-100">And remember, our app is not powered by money - but by the BMG points. Host someone, refer your friends to the app, provide services, or contribute at our events or in-app purchases to earn and share points - all while making a positive impact in your community.</p>
             </div>
         </div>
-        <img src="./assets/mission.png" alt="" class="img-fluid w-100">
+        <div class="w-100 d-none d-md-block">
+            <img src="./assets/mission.png" alt="" class="img-fluid w-100">
+        </div>
+        <div class="w-100 d-md-none">
+            <img src="./assets/missionMobile.png" alt="" class="img-fluid w-100">
+        </div>
         <div class="container missionBoxBtn">
             <div class="row ">
                 <button class="btn border-0 border-none d-inline googlePlay">
@@ -244,13 +299,13 @@
                 </button>
             </div>
         </div>
-    </secntion>
+    </section>
     <seciton id="faq" class="container-fluid pt-5 my-5">
         <div class="container">
             <h1 class="text-center mb-5 pb-4">
                 FAQ's
             </h1>
-            <div class="buttonRow w-100 d-flex px-4 justify-content-between">
+            <div class="buttonRow w-100 d-flex flex-wrap px-4 justify-content-between">
                 <button type="button" onclick="general()" id="generalFaqBtn" class="btn faqBtn faqBtnActive"><img src="./assets/faqGeneral.png" id="generalImg" alt=""> General</button>
                 <button type="button" onclick="hosting()" id="hostingFaqBtn" class="btn faqBtn"><img src="./assets/faqHosting.png" id="hostingImg" alt=""> Hosting</button>
                 <button type="button" onclick="ofering()" id="offeringFaqBtn" class="btn faqBtn"><img src="./assets/faqOffering.png" id="offeringImg" alt=""> Offerings</button>
@@ -259,8 +314,8 @@
                 <button type="button" onclick="friends()" id="friendsFaqBtn" class="btn faqBtn"><img src="./assets/faqFriends.png" id="friendsImg" alt=""> Friends</button>
                 <button type="button" onclick="request()" id="requestFaqBtn" class="btn faqBtn"><img src="./assets/faqRequest.png" id="requestImg" alt=""> Requests</button>
             </div>
-            <div class="row px-5">
-                <div class="accordion mt-5 pt-3 px-5 faqAccordian" id="accordionPanelsStayOpenExample">
+            <div class="row px-md-5 px-4">
+                <div class="accordion mt-5 pt-3 px-md-5 faqAccordian" id="accordionPanelsStayOpenExample">
                     <div id="accordion-container">
                         <section id="hostingFaq">
                             <div class="accordion-item border-0">
@@ -692,7 +747,9 @@
                   </nav> -->
             </div>
         </div>
-        <img src="./assets/faq_bg.png" class="img-fluid w-100" alt="">
+        <div class="w-100">
+            <img src="./assets/faq_bg.png" class="img-fluid w-100" alt="">
+        </div>
     </seciton>
     <section class="container-fluid conatctBox">
         <div class="container">

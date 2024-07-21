@@ -386,7 +386,7 @@ iframe.bMyGuestIntroVideo html body video{
     background: linear-gradient(180deg, rgba(31,31,32,1) 0%, rgba(14,0,102,1) 100%);
     height: 1060px;
     padding: 60px 0px;
-    margin-top: -5px;
+    margin-top: -30px;
 }
 .contactForm{
     background-color: #fff;
@@ -488,4 +488,230 @@ footer{
 
 #generalFaq,#hostingFaq{
     display: none;
+}
+
+@media (max-width: 1200px) {
+    /* .banner,.bannerBottom{
+        width: 103%;
+    } */
+    .contactForm{
+        max-width: 100% !important;
+        width: 98% !important;
+        margin-left: 0%;
+        padding: 20px 100px !important;
+    }
+    .conatctBox{
+        height: auto;
+    }
+    .missionBoxBtn{
+        top: -130px;
+    }
+    .missionBoxBtn .googlePlay {
+        width: 200px !important;
+        margin-left: 70px;
+    }
+    .contactFormSocial {
+        height: 200px;
+        width: 200px !important;
+    }
+    .contactFormSocial img {
+        margin: 50px 0px;
+    }
+}
+@media (max-width: 800px) {
+    .navbar{
+        background-color: #5A24C7;
+    }
+    .socialIcon {
+        background-color: #0E0066;
+    }
+    /* section 01 */
+    .bannerContet h1{
+        font-size: 36px !important;
+    }
+    .bannerContet p{
+        font-size: 18px;
+    }
+    .carousel{
+        width: 100% !important;
+        margin: 0 auto;
+        top: 100px;
+    }
+    .socialIcon{
+        position: fixed;
+    }
+    /* section 01 */
+    .missionBoxBtn {
+        top: 0px;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    /* section contact */
+    .contactForm{
+        max-width: 100% !important;
+        width: 98% !important;
+    }
+    .conatctBox{
+        height: auto;
+    }
+    .formInput {
+        width: 100% !important;
+    }
+    .contactFormSocial {
+        height: 100px;
+        width: 100px !important;
+    }
+    .contactIcon {
+        padding: 0 130px;
+    }
+    .contactFormSocial img {
+        margin: 20px 0px;
+    }
+    /* section contact */
+
+
+}
+@media (max-width: 765px) {
+    .navbar-brand{
+        width: 170px;
+    }
+    /* section 01 */
+    .banner {
+        height: 500px;
+    }
+    .bannerContet {
+        padding-top: 56px;
+    }
+    .bannerContet h1{
+        text-align: center;
+        color: #ffffff;
+        font-size: 32px !important;
+    }
+    .bannerContet p{
+        font-size: 18px;
+        text-align: center;
+
+    }
+    .carousel{
+        width: 50% !important;
+        margin: 0 auto;
+        top: -10px;
+    }
+    .socialIcon{
+        position: fixed;
+        z-index: 99;
+    }
+    .bannerTextMobile{
+        padding-top: 100px;
+    }
+    .bannerTextMobile p{
+        font-family: interLight;
+        color: #626263;
+    }
+    /* section 01 */
+    /* section 02 */
+    .bemyguest60Sec {
+        height: auto;
+        padding: 0px;
+        flex-wrap: wrap-reverse !important;
+    }
+    .bemyguest60Sec {
+        height: auto;
+        padding: 0px;
+        flex-wrap: wrap-reverse !important;
+    }
+    .guestCntnt {
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 400;
+        padding-right: 0px;
+        letter-spacing: 0.6px;
+        text-align: center;
+    }
+    .guestTtl {
+        font-size: 1.25rem;
+    }
+    /* section 02 */
+    /* section 03 */
+    #about{
+        background-color: #DCDFFF80;
+    }
+    .aboutT {
+        font-size: 20px !important;
+        padding-top: 30px;
+    }
+    .aboutTtl {
+        font-size: 14px; 
+    }
+    .cardAbout {
+        width: 100% !important;
+        max-width: 300px !important;
+        margin: 0 auto;
+    }
+    /* section 03 */
+    .missionBoxBtn {
+        top: 0px;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .missionBoxBtn .googlePlay {
+        width: 150px !important;
+        margin-left: 0px;
+    }
+    .faqAccordian .accordion-button {
+        font-size: 0.8rem !important;
+        padding: 0.25rem 0.5rem;
+        position: relative;
+        padding-left: 24px;
+    }
+    .accordion-button::after{
+        position: absolute;
+        left: 0px;
+    }
+    /* section contact */
+    .contactForm h1 {
+        font-size: 36px;
+        color: #ffffff;
+    }
+    .contactForm .sahreData {
+        color: #DED3F4;
+    }
+    .contactForm{
+        max-width: 100% !important;
+        width: 98% !important;
+        padding: 20px 0px !important;
+        background-color: transparent;
+    }
+    .conatctBox{
+        height: auto;
+    }
+    .formInput {
+        width: 100% !important;
+    }
+    .formInput label.form-label,.form-label {
+        color: #fff !important;
+    }
+    .contactIcon {
+        padding: 0 50px;
+    }
+    .contactFormSocial {
+        height: 50px;
+        width: 50px !important;
+    }
+    .contactFormSocial img {
+        margin: 0px;
+    }
+    .footerCompany {
+        width: 50% !important;
+        padding-top: 20px;
+    }
+    .footerCompany ul {
+        font-size: 18px;
+        padding-left: 20px;
+    }
+    /* section contact */
+
+
 }
