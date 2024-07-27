@@ -831,4 +831,7 @@ footer{
         display: flex;
         justify-content: center;
     }
+    video{
+        border: 1px solid #eaeaea;
+    }
 }
