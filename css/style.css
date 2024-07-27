@@ -620,10 +620,12 @@ footer{
         font-size: 14px;
         font-weight: 400;
         line-height: 21px;
+        letter-spacing: 1px;
     }
     .contactBtn {
         width: 150px;
         height: 44px;
+        margin-bottom: 1rem;
     }
     .bannerBottom {
         height: 133px;
@@ -663,6 +665,9 @@ footer{
     }
     .guestTtl {
         font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+    .guestTtl.aboutT {
         margin-bottom: 0rem;
     }
     /* section 02 */
@@ -689,6 +694,9 @@ footer{
         border-radius: 0px;
         box-shadow: 0px 0px 0px 0px #a5a5a5;
         margin-bottom: 1rem;
+    }
+    h4.cardAbout-title{
+        color: #000;
     }
     .cardAbout-title{
         color: #626263;
@@ -721,6 +729,12 @@ footer{
         left: 0px;
     }
     /* section FAQ */
+    .faqBtn {
+        min-width: 100px;
+        border-radius: 6px;
+        padding: 4px 12px;
+        font-size: 0.75rem !important;
+    }
     .accordion-header {
         margin-bottom: 16px !important;
     }
@@ -732,20 +746,24 @@ footer{
     /* section FAQ */
     /* section contact */
     .contactForm h1 {
-        font-size: 36px;
+        font-size: 26px;
         color: #ffffff;
     }
     .contactForm .sahreData {
         color: #DED3F4;
     }
+    .formInput input.form-control{
+        height: 46px;
+    }
     .contactForm{
         max-width: 100% !important;
         width: 98% !important;
-        padding: 20px 0px !important;
+        padding: 10px 0px !important;
         background-color: transparent;
     }
     .conatctBox{
         height: auto;
+        padding: 10px 0px;
     }
     .formInput {
         width: 100% !important;
@@ -762,6 +780,9 @@ footer{
     }
     .contactFormSocial img {
         margin: 0px;
+    }
+    footer{
+        margin-top: -10px !important;
     }
     .footerCompany {
         width: 50% !important;
