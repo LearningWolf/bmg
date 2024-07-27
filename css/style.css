@@ -783,6 +783,7 @@ footer{
     }
     footer{
         margin-top: -10px !important;
+        height: 65vh;
     }
     .footerCompany {
         width: 50% !important;
