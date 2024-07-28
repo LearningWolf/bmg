@@ -588,6 +588,7 @@ footer{
     }
     .navbar-brand{
         width: 170px;
+        margin-right: 2rem;
     }
     /* section 01 */
     .banner {
