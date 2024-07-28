@@ -433,7 +433,7 @@ span.redDot{
     height: 89px;
 }
 .contactForm textarea::placeholder{
-    color: #00000080;
+    color: #D8DADC;;
 
 }
 .sendBtn{
@@ -573,6 +573,10 @@ footer{
 
 }
 @media (max-width: 765px) {
+    .navigaMenu{
+        margin-top: 20px;
+        font-size: 20px;
+    }
     .navbar-collapse{
         position: absolute;
         left: 0px;

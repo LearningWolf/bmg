@@ -20,3 +20,17 @@ elements.forEach(el => {
 
 setFaq("general");
 // let hosting = () => {
+
+document.addEventListener('DOMContentLoaded', function() {
+    var navLinks = document.querySelectorAll('.navigaMenu a');
+    var navToggler = document.getElementById('navToggler');
+    var navCollapse = document.getElementById('navbarSupportedContent');
+
+    navLinks.forEach(function(navLink) {
+      navLink.addEventListener('click', function() {
+        if (navToggler.getAttribute('aria-expanded') === 'true') {
+          navToggler.click(); // Simulate the click to collapse the navbar
+        }
+      });
+    });
+  });
