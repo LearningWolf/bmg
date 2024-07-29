@@ -129,7 +129,7 @@ nav{
     font-weight: 600;
     font-family: interMedium;
     line-height: 1.4 !important;
-    color: #000;
+    color: #141967;
 }
 .bannerContet p{
     font-size: 17px;
@@ -641,13 +641,14 @@ footer{
     /* section 01 */
     .banner {
         height: 500px;
+        margin-top: 50px;
     }
     .bannerContet {
         padding-top: 56px;
     }
     .bannerContet h1{
         text-align: center;
-        color: #ffffff;
+        color: #141967;
         font-size: 32px !important;
     }
     .bannerContet p{
@@ -667,7 +668,7 @@ footer{
         border-left-width: 0px;
     }
     .bannerTextMobile{
-        padding-top: 100px;
+        padding-top: 60px;
     }
     .bannerTextMobile p{
         font-family: interLight;
@@ -870,7 +871,7 @@ footer{
     .carousel{
         width: 50% !important;
         margin: 0 auto;
-        top: 50px;
+        top: 20px;
     }
     .footerCompany {
         width: 33% !important;
