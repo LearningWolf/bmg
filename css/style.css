@@ -383,6 +383,9 @@ h4.cardAbout-title{
 .faqBtn img{
     margin-right: 10px;
 }
+.buttonRow{
+    justify-content: space-between;
+}
 .faqAccordian .accordion-button{
     font-size: 1.2rem !important;
     color: #1E1E1E;
@@ -657,7 +660,7 @@ footer{
 
     }
     .carousel{
-        width: 50% !important;
+        width: 24% !important;
         margin: 0 auto;
         top: -10px;
     }
@@ -720,7 +723,7 @@ footer{
         text-align: center;
     }
     .guestTtl {
-        font-size: 1.25rem;
+        font-size: 26px;
         margin-bottom: 1rem;
     }
     .guestTtl.aboutT {
@@ -747,6 +750,8 @@ footer{
     }
     .cardAbout img {
         max-width: 100% !important;
+        width: 80%;
+        margin-left: 10%;
         border-radius: 0px;
         box-shadow: 0px 0px 0px 0px #a5a5a5;
         margin-bottom: 1rem;
@@ -756,14 +761,22 @@ footer{
     }
     .cardAbout-title{
         color: #626263;
+        font-weight: 700;
     }
     .cardAbout-text{
         font-family: interLight;
         color: #1E1E1E;
         letter-spacing: 1px;
-        font-size: 16px;
+        font-size: 14px;
+        padding: 10px;
+        padding-bottom: 1.5rem;
     }
     /* section 03 */
+    .ourMissionMobileImg{
+        width: 80%;
+        margin-left: 10%;
+        border-radius: 8px;
+    }
     .missionBoxBtn {
         top: 0px;
         display: flex;
@@ -793,6 +806,9 @@ footer{
         border-radius: 6px;
         padding: 4px 12px;
         font-size: 0.75rem !important;
+    }
+    .buttonRow{
+        justify-content: flex-start;
     }
     .accordion-header {
         margin-bottom: 16px !important;
@@ -854,7 +870,24 @@ footer{
     }
     /* section contact */
 }
+@media (max-width: 650px) {
+    .carousel{
+        width: 28% !important;
+    }
+}
+@media (max-width: 600px) {
+    .carousel{
+        width: 31% !important;
+    }
+}
 
+@media (max-width: 550px) {
+    .carousel{
+        width: 48% !important;
+        margin: 0 auto;
+        top: 20px;
+    }
+}
 @media (max-width: 500px) {
     .banner {
         background-image: url(../assets/bannerMobile.png);
@@ -867,11 +900,6 @@ footer{
     }
     .bannerTextMobile p{
         padding-top: 70px;
-    }
-    .carousel{
-        width: 50% !important;
-        margin: 0 auto;
-        top: 20px;
     }
     .footerCompany {
         width: 33% !important;
@@ -897,7 +925,13 @@ footer{
         border: 1px solid #eaeaea;
     }
 }
-
+@media (max-width: 480px) {
+    .carousel{
+        width: 50% !important;
+        margin: 0 auto;
+        top: 20px;
+    }
+}
 @media (max-width: 400px) {
     .faqBtn {
         min-width: 10px;
