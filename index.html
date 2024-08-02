@@ -787,29 +787,30 @@
     <section id="contact" class="container-fluid conatctBox">
         <div class="container">
             <div class="row">
-                <form class="contactForm">
+                <form class="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="ea7d5fa3-2476-4345-9877-3da8d3206176">
                     <h1 class="text-center">Contact Us</h1>
                     <p class="text-center sahreData">We will never share your data with third party</p>
                     <div class="row px-4 justify-content-between">
                         <div class="mb-4 formInput">
                             <label for="exampleInputEmail1" class="form-label">First Name<span class="redDot">*</span></label>
-                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="First Name" aria-describedby="emailHelp">
+                            <input type="text" name="first_name" class="form-control" id="exampleInputEmail1" placeholder="First Name" aria-describedby="emailHelp">
                         </div>
                         <div class="mb-4 formInput">
                             <label for="exampleInputEmail1" class="form-label">Last Name<span class="redDot">*</span></label>
-                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Last Name" aria-describedby="emailHelp">
+                            <input type="text" name="last_name" class="form-control" id="exampleInputEmail1" placeholder="Last Name" aria-describedby="emailHelp">
                         </div>
                         <div class="mb-4 formInput">
                             <label for="exampleInputEmail1" class="form-label">Phone<span class="redDot">*</span></label>
-                            <input type="number" class="form-control" id="exampleInputEmail1" placeholder="Phone Numer" aria-describedby="emailHelp">
+                            <input type="number" name="phone" class="form-control" id="exampleInputEmail1" placeholder="Phone Numer" aria-describedby="emailHelp">
                         </div>
                         <div class="mb-4 formInput">
                             <label for="exampleInputEmail1" class="form-label">Email address<span class="redDot">*</span></label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="email@gmail.com" aria-describedby="emailHelp">
+                            <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="email@gmail.com" aria-describedby="emailHelp">
                         </div>
                         <div class="mb-4 col-12">
                             <label for="exampleFormControlTextarea1" class="form-label">Message<span class="redDot">*</span></label>
-                            <textarea class="form-control p-3" id="exampleFormControlTextarea1" rows="3" placeholder="Add text here"></textarea>
+                            <textarea class="form-control p-3" name="message" id="exampleFormControlTextarea1" rows="3" placeholder="Add text here"></textarea>
                         </div>
                     </div>
                     <div class="row mb-4 justify-content-center">
