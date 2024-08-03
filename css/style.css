@@ -541,10 +541,6 @@ footer{
     padding: 15px;
     border-radius: 50%;
 }
-
-#backToTop:hover {
-    background-color: #333;
-}
 @media (max-width: 1200px) {
     .redemPoint {
         width: 180px;
