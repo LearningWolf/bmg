@@ -37,12 +37,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
 //  Clear Forum
 
-document.getElementById('sendBtn').addEventListener('click', function() {
-});
 window.onload = function() {
   document.getElementById('myForm').reset();
   console.log("reset form")
 };
+
+document.getElementById('myForm').addEventListener('submit', function(event) {
+  // event.preventDefault();
+  console.log("Form submitted!")
+  event.target.reset();
+});
 
 
 let backToTopButton = document.getElementById("backToTop");
