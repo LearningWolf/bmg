@@ -38,8 +38,10 @@ document.addEventListener('DOMContentLoaded', function() {
 //  Clear Forum
 
 document.getElementById('sendBtn').addEventListener('click', function() {
-    document.getElementById('myForm').reset();
 });
+window.onload = function() {
+  document.getElementById('myForm').reset();
+};
 
 
 let backToTopButton = document.getElementById("backToTop");
