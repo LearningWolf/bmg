@@ -41,6 +41,7 @@ document.getElementById('sendBtn').addEventListener('click', function() {
 });
 window.onload = function() {
   document.getElementById('myForm').reset();
+  console.log("reset form")
 };
 
 
