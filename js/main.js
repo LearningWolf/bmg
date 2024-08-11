@@ -43,9 +43,8 @@ window.onload = function() {
 };
 
 document.getElementById('myForm').addEventListener('submit', function(event) {
-  // event.preventDefault();
-  console.log("Form submitted!")
-  event.target.reset();
+  console.log("Form submitted!");
+  this.reset(); // Reset the form after submission
 });
 
 
